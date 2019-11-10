@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <select name="header__control" id="chanel_choose">
+                <option value="matchpremierhd">Матч Премьер HD</option>
+                <option value="matchtvhd">Матч ТВ HD</option>
+                <option value="matchfootbal1hd">Матч Футбол 1</option>
+                <option value="matchfootbal2hd">Матч Футбол 2</option>
+                <option value="matchfootbal3hd">Матч Футбол 3</option>
+            </select>
+
+            <div class="link" id="div"></div>
+            
+            <div class="link_wrapper">
+                <label for="">Вставить полученную ссылку</label>
+                    <input type="text" class="channel_link">
+                </label>
+            </div>
+
+            <button class="header__btn">Воспроизвести</button>
+        </div>
+        <div class="video__wrapper" id="streamPlayerWrapper">
+            <video id=streamPlayer width=90% height=90% class="video-js vjs-default-skin" controls>
+                <source class="source" src="" type="application/x-mpegURL">
+            </video>
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src='https://vjs.zencdn.net/7.6.5/video.js'></script>
+    <script src="videojs-contrib-hls.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
